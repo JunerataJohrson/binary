@@ -11,7 +11,11 @@ var Binary = (function(){
 	Binary.prototype.setValue = function(value){
 		this._value = value;
 		this._digits = value.toString().split("").map(function(digit){
-			return parseInt(digit);
+			if (digit == '1' || digit == '0') {
+				return parseInt(digit);
+			}else{
+				throw "Digits must be either 1 or 0";
+			}
 		});
 	};
 

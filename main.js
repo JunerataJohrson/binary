@@ -7,8 +7,12 @@ document.addEventListener('DOMContentLoaded', function(){
 	form.addEventListener('submit', function(e){
 		e.preventDefault();
 
-		binaryValue = binaryValueField.value;
-		binNum = new Binary(binaryValue);
-		result.innerHTML = binNum.toDenary();
+		try{
+			binaryValue = binaryValueField.value;
+			binNum = new Binary(binaryValue);
+			result.innerHTML = binNum.toDenary();
+		}catch(error){
+			result.innerHTML = error;
+		}
 	});
 });
