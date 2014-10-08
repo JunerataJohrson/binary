@@ -33,7 +33,7 @@ function binaryAddition() {
 		var bin2 = new Binary(num2.value);
 
 		var result = bin1.add(bin2);
-		resultBox.innerHTML = bin1.toDenary();
+		resultBox.innerHTML = bin1.getValue() + '(' + bin1.toDenary() + ')';
 		
 	});
 }
