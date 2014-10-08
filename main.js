@@ -32,7 +32,7 @@ function binaryAddition() {
 		var bin1 = new Binary(num1.value);
 		var bin2 = new Binary(num2.value);
 
-		var result = bin1.add(bin2);
+		bin1.add(bin2);
 		resultBox.innerHTML = bin1.getValue() + '(' + bin1.toDenary() + ')';
 		
 	});
