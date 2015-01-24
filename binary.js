@@ -28,14 +28,13 @@ var Binary = (function(){
 		for (var i=0; i<digits.length; i++){
 			var digit = digits[i];
 
-			if (!foundFirstOne) {
-				if (digit === 1) {
-					foundFirstOne = true;
-					remainder = 1;
-				}
-			}else{
+			if (foundFirstOne) {
 				remainder = 2 * remainder + digit;
 			}
+			else if (digit === 1) {
+				foundFirstOne = true;
+				remainder = 1;
+			}	
 		}
 		return remainder;
 	}
