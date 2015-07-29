@@ -1,4 +1,1 @@
-binary
-======
-
-JavaScript "Class" to work with binary numbers. 
+This class will allow the learners to work with binary numbers in a effective way. Program is written in Javascript. You will be able to access binary number utitlies like , adding,multiplying, division. If you are a student. You will can know many things about binary numbers <a href="http://99onlinepoker.co">here</a>. 
